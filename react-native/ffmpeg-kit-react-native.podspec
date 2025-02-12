@@ -79,7 +79,7 @@ Pod::Spec.new do |s|
   s.subspec 'audio' do |ss|
       ss.source_files      = '**/FFmpegKitReactNativeModule.m',
                              '**/FFmpegKitReactNativeModule.h'
-      ss.dependency 'ffmpeg-kit-ios-audio', "6.0"
+      ss.resource = 'https://github.com/lovegaoshi/ffmpeg-kit/releases/download/v6.0.2-binary/ffmpeg-kit-audio-6.0-ios-xcframework.zip'
       ss.ios.deployment_target = '12.1'
   end
 
