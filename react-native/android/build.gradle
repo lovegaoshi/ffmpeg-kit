@@ -30,11 +30,11 @@ android {
     namespace 'com.arthenica.ffmpegkit.reactnative'
   }
 
-  compileSdkVersion 36
+  compileSdkVersion safeExtGet('compileSdkVersion', "34").toInteger()
 
   defaultConfig {
     minSdkVersion safeExtGet('ffmpegKitPackage', 'https').contains("-lts") ? 16 : 24
-    targetSdkVersion 36
+    targetSdkVersion safeExtGet('targetSdkVersion', "31").toInteger()
     versionCode 602
     versionName "6.0.2"
   }
